@@ -22,10 +22,10 @@ summary{width: 100px;margin: auto;border-radius: 10px 10px;padding: 5px;backgrou
 form{margin: auto;align-items: center;justify-content: center;text-align: center;display: flex;flex-direction: column;}
 fieldset{cursor: grabbing;width: 300px;margin: auto;border-radius: 10px 10px;padding: 15px;display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;background-color: whitesmoke;border: 4px solid red;box-shadow: 5px 5px 5px black;}
 label{padding: 20px;text-shadow: 9px;text-decoration: none;color: black;display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;cursor: text;}
-.color1{gap:6px;padding:10px;white-space:nowrap;margin:auto;width:850px;border-radius:10px 10px;padding:6px;background-color:darkslateblue;border:4px solid whitesmoke;box-shadow:5px 5px 5px black;cursor: grabbing;}
-.color2{gap:6px;padding:10px;white-space:nowrap;margin:auto;width:850px;border-radius:10px 10px;padding:6px;background-color:darkgoldenrod;border:4px solid whitesmoke;box-shadow:5px 5px 5px black;cursor: grabbing;}
-.color3{gap:6px;padding:10px;white-space:nowrap;margin:auto;width:850px;border-radius:10px 10px;padding:6px;background-color:darkmagenta;border:4px solid whitesmoke;box-shadow:5px 5px 5px black;cursor: grabbing;}
-.color4{gap:6px;padding:10px;white-space:nowrap;margin:auto;width:850px;border-radius:10px 10px;padding:6px;background-color:darksalmon;border:4px solid whitesmoke;box-shadow:5px 5px 5px black;cursor: grabbing;}
+.color1{gap:6px;padding:10px;white-space:nowrap;margin:auto;width:850px;border-radius:10px 10px;padding:6px;background-color:darkslateblue;border:4px solid whitesmoke;box-shadow:5px 5px 5px black;cursor: grabbing;display:flex;flex-direction:row;}
+.color2{gap:6px;padding:10px;white-space:nowrap;margin:auto;width:850px;border-radius:10px 10px;padding:6px;background-color:darkgoldenrod;border:4px solid whitesmoke;box-shadow:5px 5px 5px black;cursor: grabbing;display:flex;flex-direction:row;}
+.color3{gap:6px;padding:10px;white-space:nowrap;margin:auto;width:850px;border-radius:10px 10px;padding:6px;background-color:darkmagenta;border:4px solid whitesmoke;box-shadow:5px 5px 5px black;cursor: grabbing;display: flex;flex-direction: row;}
+.color4{gap:6px;padding:10px;white-space:nowrap;margin:auto;width:850px;border-radius:10px 10px;padding:6px;background-color:darksalmon;border:4px solid whitesmoke;box-shadow:5px 5px 5px black;cursor: grabbing;display:flex;flex-direction:row;}
 input{margin: auto;width: 300px;border-radius: 10px 10px;padding: 4px;text-align: left;text-shadow: 9px;cursor: auto;display: flex;flex-direction: column;color: black;background-color: whitesmoke;border: 4px solid blue;box-shadow: 3px 3px 3px black;font-size: 16px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-style: oblique;}
 select{width: 200px;margin: auto;border-radius: 10px 10px;padding: 5px;background-color: black;color: yellow;border: 4px solid white;box-shadow: 5px 5px 5px black;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;cursor: grabbing;}
 textarea{height: 200px;width: 300px;margin: auto;border-radius: 10px 10px;padding: 5px;font-size: 16px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style: oblique;background-color: bisque;color: black;border: 3px solid black;cursor: grabbing}
@@ -289,7 +289,7 @@ $host='127.0.0.1';
 $username='guibarbosasilva';
 $dbname='bdadogui';
 $password='';
-$conn= mysqli_connect($host,$username,$password,$dbname);
+$conn=mysqli_connect($host,$username,$password,$dbname);
 $nome=$_POST['nome']??null;
 $idade=$_POST['idade']??null;
 $cpf=$_POST['cpf']??null;
